@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "94eb8b9c-93c4-4584-afa7-1548495669b8",
+		"name": "Iran-API-Province",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28516501"
+	},
+	"item": [
+		{
+			"name": "Iran-API-Province-POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/REST-API/IRAN-project/api/v1/provinces/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"REST-API",
+						"IRAN-project",
+						"api",
+						"v1",
+						"provinces",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Iran-API-province-GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/REST-API/IRAN-project/api/v1/provinces/?id=&page=1&pagesize=4&fields=name,id&orderby=name desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"REST-API",
+						"IRAN-project",
+						"api",
+						"v1",
+						"provinces",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": ""
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "pagesize",
+							"value": "4"
+						},
+						{
+							"key": "fields",
+							"value": "name,id"
+						},
+						{
+							"key": "orderby",
+							"value": "name desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Iran-API-Province-DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/REST-API/IRAN-project/api/v1/cities/?city_id=445",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"REST-API",
+						"IRAN-project",
+						"api",
+						"v1",
+						"cities",
+						""
+					],
+					"query": [
+						{
+							"key": "city_id",
+							"value": "445"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Iran-API-Province-PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":32,\r\n    \"name\":\"ddddddd\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/REST-API/IRAN-project/api/v1/provinces/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"REST-API",
+						"IRAN-project",
+						"api",
+						"v1",
+						"provinces",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
